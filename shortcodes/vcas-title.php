@@ -25,7 +25,7 @@ function vcas_component_title() {
 					'class' => '',
 					'heading' => __( 'Title' ),
 					'param_name' => 'title',
-					'value' => __( 'How an eye check saved my life' ),
+					'value' => __( 'This is the custom shortcode' ),
 					'description' => __( 'Title' ),
 				),
 				array(
@@ -54,8 +54,7 @@ add_action( 'vc_before_init', 'vcas_component_title' );
 function vcas_title_function( $atts, $content ) {
 	$atts = shortcode_atts(
 		array(
-			'style' => 'style1',
-			'title' => __( 'How an eye check saved my life' ),
+			'title' => __( 'This is the custom shortcode' ),
 			'title_color' => '#000000',
 		), $atts, 'vcas_title'
 	);
